@@ -1,0 +1,509 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	background : #def ;
+}
+
+#banniere {
+	margin-top : -1em;
+	height : 15em ;
+	width : 100% ;	
+	border-bottom : 0.5em groove #5c5 ;
+}
+
+#menu {
+	width : 65% ;
+	margin : auto ;
+	border : 0px solid gray ;
+	
+}
+
+#menu td {
+	border-color : #00a ;	
+	text-align : center ;
+	border-radius : 1000px ;
+	width : 8em;
+	height : 8em;
+	border-collapse : separate;
+	box-shadow : 0px 5px 2px #5a5;
+	border-style : outset ;
+	background : white ;
+	font-family : "tempus sans ITC";
+}
+
+#menu td a {
+	text-decoration : none ;
+	color : #222 ;
+	font-weight : bold ;
+	
+}
+#menu td a:hover {
+	color : white ;
+	
+} 
+
+.option table td{
+	cursor : pointer;
+	/*border-radius : 0px 15px 15px 0px ;*/
+	font-family : "tempus sans ITC" ;
+}
+
+.option table td:hover {
+	color : white ;
+	font-weight : bold;
+	border-size : 0px;
+	border-color : #abc ;
+	background: #abb ;
+	
+}
+
+#menu td:hover {
+	color : green ;
+	font-weight : bold ;
+	font-family : "Tempus sans ITC" ;
+	box-shadow : 0px 8px 2px green;
+	background : #cde ;
+	text-shadow : 5px 5px 2px #5a5;
+	cursor : pointer ;
+}
+#menu td a:hover {
+	color : white ;
+}
+
+
+#pieds {
+	height : 5em ;
+	width : 100% ;		
+	border-top : 0.5em solid green;
+	background : url('../assets/footer.png') ; 
+	color : #ccc ;
+	margin-top : 15%;
+	margin-bottom : -1em;
+	
+}
+
+
+#second {
+	height : 1em;
+	font-size : 0.75em;
+	color : #050;
+	padding-top : 2em;
+}
+
+#supplements img {
+	border : 3px groove #abc;
+	border-radius : 5px;
+	box-shadow : 0px 0px  
+	
+}
+#organisme {
+	position : absolute ;
+	font-weight : bold ;
+	right : 1em;
+	top : 15% ;
+	z-index : 1 ;
+	
+	font-size : 3em;
+	font-family : "tempus sans ITC";
+}
+
+#organisme span:nth-child(1){
+	color : #68b12f;
+}
+#organisme span:nth-child(2){
+	color : red;
+}
+#organisme span:nth-child(3){
+	color : yellow;
+}
+
+#organisme p {
+	text-shadow : 7px 7px 3px #aaa;
+			
+}
+
+.commons {
+	width : 75%;
+	margin : auto ;
+	border-radius:10px;
+	border-collapse : separate;
+	box-shadow : 0px 5px 2px #5a5;
+	border-style : outset ;
+	font-family : "tempus sans ITC";
+	}
+.commons table {
+	width : 100%;
+}
+.commons table td {
+	/*text-align : center ;*/
+	padding : auto ;
+
+}
+
+
+
+#blocProgram{
+	background : #acb ;
+	display : none ;
+	border : 3px outset #555 ;
+}
+
+#blocAction{
+	background : #acb ;
+	display : none ;
+	border : 3px outset #555 ;
+
+}
+
+#blocProjet {
+	background : #aaccbb ;
+	display : none ;
+	border : 3px outset #555 ;
+}
+
+#blocForum {
+	background : #acb ;
+	display : none ;
+	border : 3px outset #555 ;
+	
+}
+
+#blocProgram th ,#blocAction th ,#blocProjet th {
+	border : 2px solid #acb ;
+	border-radius : 5px ;
+}	
+
+.progr0,.progr1,.progr2,.progr3{
+	display:none;	
+}
+
+#blocProgram td ,#blocAction td ,#blocProjet td {
+	background : #eee ;
+	border : 1px solid #acb ;
+	border-radius : 5px ;
+}
+
+.progr{
+	border : 2px solid white ;
+	border-radius : 5px ;
+	background : #red ;
+}
+
+#blocPublication1,#blocPublication2,#blocPublication3,#blocPublication4,#blocPublication5 {
+	background : #ccddee ;
+	text-align : center ;
+	display :none ;
+}
+
+
+#supplements img:hover{
+	width : 110px ;
+	height : 55px% ;
+	border : 6px inset #aabbcc ;
+
+}
+
+
+#prolonge {
+		
+	margin :auto ;
+}
+
+#connectionTable {
+	margin : 5em 30% ;
+	
+}
+#connectionTable  td{
+	height : 2em;
+	
+}
+
+#bouton{
+	text-align : center ;	
+}
+
+#bouton input {
+	width : 8em ;
+	height : 3em;
+}
+
+#connectionTable  td span{
+	font-size : 1.5em;
+	color : #444;
+	font-weight : bold ;
+}
+
+
+.input {
+	width : 98%;
+	height : 100%;	
+	
+}
+#connectionTable  th{
+	font-size : 2.3em ;
+	color : #229 ;	
+	text-shadow : 6px 6px 3px #abb;
+}
+
+#optionProgram {
+	position : absolute;
+	width : 8em ;
+	height : 20em;
+	top : 45% ;
+	position : fixed ;
+	display : none ;
+}
+
+#optionProgramTable {
+	background : #acb ;
+	text-align : center;
+	/*border-radius : 0 15px 15px 0 ;*/
+	
+}
+#optionProjet {
+	position : absolute ;
+	width : 8em ;
+	height : 20em;
+	top : 45% ;
+	display : none ;
+	position : fixed ;
+	
+}
+
+#optionProjetTable {
+	background : #acb ;
+	text-align : center;
+	/*border-radius : 0 15px 15px 0 ;*/
+	
+}
+#optionAction {
+	position : absolute ;
+	width : 8em ;
+	height : 20em;
+	top : 45% ;
+	display : none ;
+	position : fixed ;
+	
+}
+
+#optionActionTable {
+	background : #acb ;
+	text-align : center;
+	/*border-radius : 0 15px 15px 0 ;*/
+	
+}
+#optionForum {
+	position : absolute ;
+	width : 8em ;
+	height : 20em;
+	top : 45%;
+	display : none ;
+	position : fixed ;
+	
+}
+
+/* #optionForumTable {
+	background : #bca ;
+	text-align : center;
+	border-radius : 0 15px 15px 0 ;
+	
+}*/
+#barreRechercheProjet {
+	position : fixed ;
+	top : 45% ;
+	margin-left : 8em ;
+	z-index : 1;
+	border : 3px solid #333 ;
+	opacity : 0.9;
+	background : #acb;
+	/*border-radius : 0 15px 15px 0;*/
+	display : none ;
+}
+
+#barreRecherche  {
+	position : fixed ;
+	top : 48% ;
+	margin-left : 8em ;
+	z-index : 1;
+	border : 3px solid #333 ;
+	opacity : 0.9;
+	background : #acb;
+	/*border-radius : 0 15px 15px 0;*/
+	display : none ;
+}
+
+
+#barreRecherche td.search:hover {
+	opacity : 0.8;
+} 
+
+#barreRecherche td.buton input:hover ,#barreRechercheProjet td.buton input:hover {
+	cursor : pointer ;
+}
+
+#barreRechercheProjet  td.search:hover {
+	opacity : 0.8;
+} 
+
+.search {
+	width : 18em;
+	height : 2em;
+}
+.search input {
+	width : 100%;
+	height : 95%;
+	background : #acb;
+	border : 0px ;
+	color : #333 ;
+	font-weight : bold ;
+	font-size : 1.05em;
+	font-family : "tempus sans ITC" ;
+}
+.buton {
+	width : 4em;
+	height : 2em;	
+}
+.buton input {
+	width : 100%;
+	height : 100%;
+	border : 0px ;
+	background : url("../assets/submit-search.png") no-repeat top right;
+	border-radius : 0 10px 10px 0;
+}
+
+#blocTelechargements {
+	background : #acb ;
+	display : none ;
+	border : 3px outset #555 ;
+}
+
+th a { 
+	text-decoration : none ;
+}
+
+#blocTelechargements  td table {
+	display  : none ;
+}
+
+#blocTelechargements  td {
+	border-radius : 5px ;
+	border : 1px solid #9ba;
+}
+
+#resultatRecherches {
+	display : none ;
+	background : #658 ;
+}
+
+
+#resultatRecherchesProjet {
+	display : none ;
+	background : #658 ;
+}
+
+#man {
+	position : fixed;
+	top : 45%;
+	right:2px ;
+	width : 10%;
+	height : 40%;
+	border-radius :  15px 0 0 15px ;
+	border : 3px groove #abc ;
+	display : none ;
+	font-family : "tempus sans ITC" ;
+	background : #eee ;
+}
+
+
+#manProgram,#manAction,#manProjet,#manForum {
+	display : none ;
+}
+
+
+#blocTelechargements  td table  th {
+	background : #aaa;
+}
+
+#blocTelechargements  td table  td {
+	background : #eee;
+}
+
+#etatFicheProjet {
+	background : #ad8 ;
+	display : none ;
+	width : 70%;
+}
+
+#etatFicheProjet  td  {
+	background : #ddd;
+	width : 25%;
+}
+
+#etatFicheProjet  th  , #etatAction th ,#TDRProjet th  {
+	font-size : 2em ;
+}
+
+#fp-dl td span {
+	text-decoration : underline ;
+	color : green ;
+	cursor : pointer ;
+}
+
+#a-dl td span {
+	text-decoration : underline ;
+	color : green ;
+	cursor : pointer ;
+}
+
+#etatAction {
+	background : #ad8 ;
+	display : none ;
+}
+#etatAction  td {
+	width : 25%;
+}
+
+#comments {
+	text-align : justify ;
+	width : 50%;
+}
+
+#TDRProjet {
+	background : #ad8 ;
+	display : none ;
+	width : 70%;
+}
+
+#TDRProjet td{
+	width : 10%;
+}
+
+fieldset {
+	border-radius : 1em;
+}
+
+.slideshow {
+	width : 50%;
+	height:75px;
+	margin : auto ;
+	border : 0px solid yellow ;
+   text-align:center;
+   overflow: hidden;
+}
+
+.slideshow ul {
+    /* 4 images donc 4 x 100% */
+   
+   padding:0; margin:0;
+   list-style: none;
+}
+.slideshow img{
+	width:100px;
+	height:50px;
+}
+.slideshow li {
+   float: left;
+}
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>suite_project</display-name>
+  <welcome-file-list>
+    <welcome-file>/suite_project/index</welcome-file>
+  </welcome-file-list>
+  <listener>
+    <listener-class>
+	    	listener.SessionCounter
+	  </listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>Download</servlet-name>
+    <servlet-class>servlet.Download</servlet-class>
+    <init-param>
+      <param-name>chemin</param-name>
+      <param-value>/suite_project/</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Download</servlet-name>
+    <url-pattern>/fichiers/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>images</servlet-name>
+    <servlet-class>ImageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>images</servlet-name>
+    <url-pattern>/article/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>index</servlet-name>
+    <servlet-class>servlet.index</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+</web-app>

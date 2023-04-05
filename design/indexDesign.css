@@ -1,0 +1,137 @@
+body{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;	
+	padding: 0;
+	margin: 0;
+	/*height : 62.3em;*/
+	/*font-size: 0.625em;*/
+	color: #515742;
+	background : none repeat scroll 0 0 #f0f0f0;
+	
+	text-shadow: 1px 1px 0 #fff;
+
+}
+#entete{
+	width : 100%;
+	border : 1px solid black;	
+}
+#banniere{
+	height : 10%;	
+}
+#organisme{
+	position : absolute;
+	top : 14%;
+	right : 2%;
+}
+#corps_index{	
+	background : none repeat scroll 0 0 #fff;
+	height : 60%;
+	width : 70%;
+	margin-left : 15%;
+	margin-right : 15%;
+	margin-top : 5%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;	
+	-webkit-box-shadow: 0 0 1px #bbb inset, 0 0 1px #bbb inset, 0 0 1px #bbb inset;
+	-moz-box-shadow: 0 0 1px #bbb inset, 0 0 1px #bbb inset;
+	-ms-box-shadow: 0 0 1px #bbb inset, 0 0 1px #bbb inset, 0 0 1px #bbb inset;
+	-o-box-shadow: 0 0 1px #bbb inset, 0 0 1px #bbb inset, 0 0 1px #bbb inset;
+	box-shadow: 0 0 1px #bbb inset, 0 0 1px #bbb inset;
+}
+
+#corps_index th{
+	background : none repeat scroll 0 0 #e5e5e5;
+	border-radius : 5px;	
+}
+#corps_index>table{
+	width : 100%;
+	height : 100%;
+}
+#smallTab,#mainPub,#formCompte{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;	
+	/*box-shadow: 0 0 2px #bbb;	*/
+	
+	/*background:#abc;*/
+	border: 1px solid #999999;
+	color: #222;	
+}
+#mainPub{
+	background: #dbdbdb url(../ressources/accueilMsg.png) no-repeat scroll 0% 0%;
+}
+#smallTab th{
+	border-bottom: 1px solid #999999;	
+	
+	background: #fff;
+	color: #567;
+	font-weight: bold;
+	
+	box-shadow: 0 0 0px #FFF inset, 0 0 0px #FFF inset;	
+}
+#smallTab label{
+	font-size : 0.8em;	
+}
+#smallTab td{
+	padding-left : 10%;
+	padding-right : 10%;
+}
+.input{
+	width : 100%;
+	height : 50%;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;	
+	font-size : 0.8em;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	border : 1px dashed #999999;	
+	box-shadow: 0 0 2px grey;
+	background: #fff;
+}
+
+.btn{
+	border-radius: 5px;
+	border : 1px solid #dddddd;	
+	width : 40%;
+	height : 60%;
+	background : #567;
+	color : #fff;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;	
+	font-size : 0.8em;
+	transition:background 1000ms,color 1000ms,border-color 500ms;	
+}
+
+#pieds_index{
+	width : 100%;
+	text-align: center;
+	font-size: 1em;
+	width : 100% ;
+	background : none repeat scroll 0 0 #f0f0f0;
+	margin : 0;
+	position : fixed;
+	bottom : 0;
+	
+	background: #dbdbdb url(../ressources/main.png) repeat-x scroll 0 0;  
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #d4d4d4),color-stop(1, #e6e6e6));
+	background: -webkit-linear-gradient(center bottom , #d4d4d4 0%, #e6e6e6 100%) repeat scroll 0 0 #dbdbdb;  
+	background: -moz-linear-gradient(center bottom , #d4d4d4 0%, #e6e6e6 100%) repeat scroll 0 0 #dbdbdb;  
+	border: 1px solid #c0c0c0;
+	
+	-webkit-box-shadow: 0 0 1px #fff inset, 0 0 1px #fff inset, 0 0 1px #fff inset;
+	-moz-box-shadow: 0 0 1px #fff inset, 0 0 1px #fff inset;
+	-ms-box-shadow: 0 0 1px #fff inset, 0 0 1px #fff inset, 0 0 1px #fff inset;
+	-o-box-shadow: 0 0 1px #fff inset, 0 0 1px #fff inset, 0 0 1px #fff inset;
+	box-shadow: 0 0 1px #fff inset, 0 0 1px #fff inset;	
+}
+
+#erreurPassw{
+	color : red;	
+}
+
+#welcomeMsg{
+	height : 1em;	
+	color : black;
+}

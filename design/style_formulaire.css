@@ -1,0 +1,172 @@
+@charset "utf-8";
+:-moz-placeholder {
+	    	color: grey;
+		}
+		 
+::-webkit-input-placeholder {
+		    color: grey;
+		}
+		*:focus {
+			outline: none;
+		}
+		.label {
+		    margin-top: 3px;
+		    display:inline-block;
+		    float:left;
+		    padding:3px;
+		    font-size: 12px;
+		}
+		.form_hint, .required_notification {
+			font-size: 11px;
+		}
+		.in{
+			border:1px solid #aaa;
+		    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+		    border-radius:2px;
+		    -moz-transition: padding .25s;
+		    -webkit-transition: padding .25s;
+		    -o-transition: padding .25s;
+		    width:95%;
+		    padding:5px 8px;
+		}
+		.in:focus{
+			 background: #fff;
+		    border:1px solid #555;
+		    box-shadow: 0 0 3px #aaa; 
+		    padding-right:5px;
+		}
+		.in:required{
+			background: #fff url(images/red_asterisk.png) no-repeat 98% center;
+		}
+		.more{
+			box-shadow: inset 0 1px 0 0 #9fd574;
+		    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+		    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+		    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+		    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+		}
+		.btnImage{
+			background:url(../ressources/enregistrer.png) no-repeat center center;
+			border : none;
+			text-align:center;
+			color:fuchsia;
+			background-size: 90% 90%;
+		}
+		.btnImageSAVEADD{
+			background:url(../ressources/enregistrerAdd.png) no-repeat center center;
+			border : none;
+			text-align:center;
+			color:fuchsia;
+			background-size: 90% 90%;
+		}
+		#submit, input[type='reset'], #someLink,.someLink{
+		    background-color: #68b12f;
+		    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+		    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+		    background: -moz-linear-gradient(top, #68b12f, #50911e);
+		    background: -ms-linear-gradient(top, #68b12f, #50911e);
+		    background: -o-linear-gradient(top, #68b12f, #50911e);
+		    background: linear-gradient(top, #68b12f, #50911e);
+		    border: 1px solid #509111;
+		    border-bottom: 1px solid #5b992b;
+		    border-radius: 3px;
+		    -webkit-border-radius: 3px;
+		    -moz-border-radius: 3px;
+		    -ms-border-radius: 3px;
+		    -o-border-radius: 3px;
+		    box-shadow: inset 0 1px 0 0 #9fd574;
+		    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+		    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+		    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+		    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+		    color: white;
+		    font-weight: bold;
+		    padding: 6px 20px;
+		    text-align: center;
+		    text-shadow: 0 -1px 0 #396715;
+		}
+		#submit:hover, input[type='reset']:hover,.more{
+		    opacity:.85;
+		    cursor: pointer;
+		}
+		#submit:active, input[type='reset']:active {
+		    border: 1px solid #20911e;
+		    box-shadow: 0 0 10px 5px #356b0b inset;
+		    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+		    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+		    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+		    -o-box-shadow: 0 0 10px 5px #356b0b inset;    
+		}
+		form label {
+			font-size : 12px;
+		    margin-top: 3px;
+		    display:inline-block;
+		    float:left;
+		    padding:3px;
+		}
+		[type="checkbox"]:not(:checked),[type="checkbox"]:checked {
+		  position: absolute;
+		  left: -9999px;
+		}
+		 
+		/* on prÃ©pare le label */
+		[type="checkbox"]:not(:checked) + label,[type="checkbox"]:checked + label {
+		  position: relative; /* permet de positionner les pseudo-Ã©lÃ©ments */
+		  padding-left: 25px; /* fait un peu d'espace pour notre case Ã  venir */
+		  cursor: pointer;    /* affiche un curseur adaptÃ© */
+		}
+		/* Aspect des checkboxes */
+		/* :before sert Ã  crÃ©er la case Ã  cocher */
+		[type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before {
+		  content: '';
+		  position: absolute;
+		  left:0; top: 2px;
+		  width: 17px; height: 17px; /* dim. de la case */
+		  border: 1px solid #aaa;
+		  background: #f8f8f8;
+		  border-radius: 3px; /* angles arrondis */
+		  box-shadow: inset 0 1px 3px rgba(0,0,0,.3) /* lÃ©gÃ¨re ombre interne */
+		}
+		 
+		/* Aspect gÃ©nÃ©ral de la coche */
+		[type="checkbox"]:not(:checked) + label:after,
+		[type="checkbox"]:checked + label:after {
+		  /*content: 'âœ”';*/
+		  content: '●';
+		  position: absolute;
+		  top: 0; left: 4px;
+		  font-size: 14px;
+		  color: #09ad7e;
+		  transition: all .2s; /* on prÃ©voit une animation */
+		}
+		/* Aspect si "pas cochÃ©e" */
+		[type="checkbox"]:not(:checked) + label:after {
+		  opacity: 0; /* coche invisible */
+		  transform: scale(0); /* mise Ã  l'Ã©chelle Ã  0 */
+		}
+		/* Aspect si "cochÃ©e" */
+		[type="checkbox"]:checked + label:after {
+		  opacity: 1; /* coche opaque */
+		  transform: scale(1); /* mise Ã  l'Ã©chelle 1:1 */
+		}
+		/* aspect dÃ©sactivÃ©e */
+		[type="checkbox"]:disabled:not(:checked) + label:before,
+		[type="checkbox"]:disabled:checked + label:before {
+		  box-shadow: none;
+		  border-color: #bbb;
+		  background-color: #ddd;
+		}
+		/* styles de la coche (si cochÃ©e/dÃ©sactivÃ©e) */
+		[type="checkbox"]:disabled:checked + label:after {
+		  color: #999;
+		}
+		/* on style aussi le label quand dÃ©sactivÃ© */
+		[type="checkbox"]:disabled + label {
+		  color: #aaa;
+		}
+		 
+		/* aspect au focus de l'Ã©lÃ©ment */
+		[type="checkbox"]:checked:focus + label:before,
+		[type="checkbox"]:not(:checked):focus + label:before {
+		  border: 1px dotted blue;
+		}
